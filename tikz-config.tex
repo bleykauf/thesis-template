@@ -1,0 +1,65 @@
+\usetikzlibrary{external}
+   \tikzexternalize[prefix=graphics/tikz/]
+
+\usetikzlibrary{decorations.pathreplacing,patterns}
+
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\usetikzlibrary{intersections}
+\usetikzlibrary{through}
+\tikzset{
+%Define standard arrow tip
+>=stealth',
+%Define style for different line styles
+help lines/.style={dashed, thick},
+axis/.style={<->},
+important line/.style={thick},
+connection/.style={thick, dotted},
+}
+\tikzset{help lines/.style={dashed, thick}}
+
+\makeatletter
+\def\tikzpicturedependsonfile@ACTIVE#1{%
+    \begingroup
+    \tikzexternalgetcurrentfilename\tikzpicturedependsonfile@name
+    \ifx\tikzpicturedependsonfile@name\pgfutil@empty
+        \tikzexternalgetnextfilename\tikzpicturedependsonfile@name
+        \expandafter\tikzsetnextfilename\expandafter{\tikzpicturedependsonfile@name}
+    \fi
+    \expandafter\tikzexternalfiledependsonfile\expandafter{\tikzpicturedependsonfile@name}{#1}%
+    \endgroup
+}%
+\makeatother
+
+\pgfplotsset{compat=newest}
+\pgfplotsset{plot coordinates/math parser=false}
+
+\usetikzlibrary{plotmarks}
+
+\newlength\figureheight
+\newlength\figurewidth
+  \setlength\figureheight{0.6\textwidth} 
+  \setlength\figurewidth{0.8\textwidth}
+  
+% custom legends
+
+% argument #1: any options
+\newenvironment{customlegend}[1][]{%
+    \begingroup
+    % inits/clears the lists (which might be populated from previous
+    % axes):
+    \csname pgfplots@init@cleared@structures\endcsname
+    \pgfplotsset{#1}%
+}{%
+    % draws the legend:
+    \csname pgfplots@createlegend\endcsname
+    \endgroup
+}%
+
+% makes \addlegendimage available (typically only available within an
+% axis environment):
+\def\addlegendimage{\csname pgfplots@addlegendimage\endcsname}
+
+\pgfmathdeclarefunction{gauss}{2}{%
+  \pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}

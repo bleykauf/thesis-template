@@ -1,0 +1,44 @@
+\documentclass[%
+ paper=A4,
+ pagesize,
+ abstract,
+ ngerman,
+ american,
+ 11pt,
+ titlepage,
+ BCOR=12mm,
+ DIV=8,
+ twoside,
+ footinclude=false,
+ headinclude=false
+ ]{scrreprt}
+
+
+\input{thesis-config}
+\input{bib-config}
+\input{macros}
+\input{tikz-config}
+
+
+\begin{document}
+  \selectlanguage{american}
+  \pagenumbering{roman}
+  \pagestyle{plain}
+    \include{frontbackmatter/titlepage}
+    \include{frontbackmatter/abstract}
+    \include{frontbackmatter/contents}
+
+  \pagenumbering{arabic}
+    \include{chapters/introduction}
+    \include{chapters/theory}
+    \include{chapters/experiment}
+    \include{chapters/results}
+    \include{chapters/conclusion}
+
+  \appendix
+    \include{chapters/appendix}
+
+    \include{frontbackmatter/bibliography}
+    \include{frontbackmatter/acknowledgments}
+    \include{frontbackmatter/declaration}
+\end{document}

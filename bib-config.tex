@@ -1,0 +1,60 @@
+\usepackage[
+    backend=biber,%
+    style = numeric,
+    firstinits=true,
+%     citestyle=authoryear-ibid,%
+%     bibstyle=authoryear
+    bibstyle=numeric
+    ]{biblatex}
+  \addbibresource{bibliography.bib}
+ 
+% declare fields for (ISO) standards
+\DeclareDatamodelEntrytypes{standard}
+\DeclareDatamodelEntryfields[standard]{type,number}
+\DeclareBibliographyDriver{standard}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \setunit{\labelnamepunct}\newblock
+  \usebibmacro{title}%
+  \newunit\newblock
+  \printfield{number}%
+  \setunit{\addspace}\newblock
+  \printfield[parens]{type}%
+  \newunit\newblock
+  \usebibmacro{location+date}%
+  \newunit\newblock
+  \iftoggle{bbx:url}
+    {\usebibmacro{url+urldate}}
+    {}%
+  \newunit\newblock
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock
+  \usebibmacro{pageref}%
+  \newunit\newblock
+  \usebibmacro{related}%
+  \usebibmacro{finentry}}
+  
+  % personal communications
+  \defbibcheck{pc}{
+  \ifboolexpr{
+    test { \ifentrytype{misc} }
+    and
+    test{ \IfStrEq{\thefield{howpublished}}{personal communication}}
+    }
+    {\skipentry}
+    {}
+}
+
+\DeclareAutoCiteCommand{inline}{\mycite}{\cites}
+\DeclareCiteCommand{\mycite}
+  {}
+  {\ifentrytype{misc}{%
+    \IfStrEq{\thefield{howpublished}}{private communication}
+      {\printnames{labelname} \mkbibparens{private communication, \printdate}}
+      {\mkbibparens{\usebibmacro{cite}}}%
+      }
+    {\mkbibparens{\usebibmacro{cite}}}%
+  }
+  {}
+  {}
