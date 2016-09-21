@@ -1,8 +1,6 @@
-% ****************************************************************************************************
-% 2. Personal data and user ad-hoc commands
-% ****************************************************************************************************
+%Personal data and user ad-hoc commands
 \newcommand*{\myTitle}{The effect of wavefront aberrations in light-pulse atom interferometry\xspace}
-\newcommand*{\mySubtitle}{Bachelorarbeit zur Erlangung des akademischen Grades Bachelor of Science (B.\,Sc.) im Fach Physik \xspace}
+\newcommand*{\mySubtitle}{Masterarbeit zur Erlangung des akademischen Grades Master of Science (M.\,Sc.) im Fach Physik \xspace}
 \newcommand*{\myDegree}{\xspace}
 \newcommand*{\myName}{Bastian Leykauf\xspace}
 \newcommand*{\myProf}{Prof.~Achim~Peters,~PhD\xspace}
@@ -13,87 +11,48 @@
 \newcommand*{\myLocation}{Berlin\xspace}
 \newcommand*{\myTime}{7. Februar 2014\xspace}
 
-% ********************************************************************
-% Setup, finetuning, and useful commands
-% ********************************************************************
 
-% \usepackage[utf8]{inputenc}
-% \usepackage[ngerman,american]{babel}                   
+% Setup
+\usepackage[utf8]{inputenc}				
+\usepackage[T1]{fontenc}  
+\usepackage[ngerman,american]{babel}					
 
-
-% ****************************************************************************************************
-% 3. Loading some handy packages
-% ****************************************************************************************************
-% ******************************************************************** 
-% Packages with options that might require adjustments
-% ********************************************************************
-\PassOptionsToPackage{utf8}{inputenc}	% latin9 (ISO-8859-9) = latin1+"Euro sign"
- \usepackage{inputenc}				
-
-\PassOptionsToPackage{T1}{fontenc} % T2A for cyrillics
-        \usepackage{fontenc}  
- 
-\PassOptionsToPackage{ngerman,american}{babel}   % change this to your language(s)
- \usepackage{babel}					
+% Fonts
+\usepackage{libertine}                   		% 
+\usepackage[slantedGreek,libertine]{newtxmath} 	% captial greek letters are slanted
+\usepackage{inconsolata}					 	% monotype
+\usepackage{bm}                            	    % boldface math
+\usepackage{microtype}                       	% slightly tweak font spacing for aesthetics
+\KOMAoptions{DIV=last}
+  %\addtokomafont{sectioning}{\rmfamily\boldmath}         % bold math in section headings
 
 
-
-
-% \PassOptionsToPackage{fleqn}{amsmath}		% math environments and more by the AMS 
- \usepackage{mathtools}
-
-% ******************************************************************** 
 % General useful packages
-% ******************************************************************** 
-\usepackage{url}                                      % typesetting URLs
-\usepackage[babel]{csquotes}    
-\usepackage{textcomp} % fix warning with missing font shapes
-\usepackage{xspace} % to get the spacing after macros right  
-\usepackage{fixltx2e} % fixes some LaTeX stuff 
-% \PassOptionsToPackage{printonlyused,smaller}{acronym}
-% 	\usepackage{acronym} % nice macros for handling all acronyms in the thesis
-% \renewcommand{\bflabel}[1]{{#1}\hfill} % fix the list of acronyms
-% ****************************************************************************************************
-% ******************************************************************** 
-% Table of Content, etc.
-% ******************************************************************** 
-% \usepackage{tocloft}
+\usepackage{url}                    % typesetting URLs
+\usepackage[babel]{csquotes}        % quotations
+\usepackage{textcomp} 				% fix warning with missing font shapes
+\usepackage{xspace}					% to get the spacing after macros right  
 
-% ****************************************************************************************************
-% Setup floats: tables, (sub)figures, and captions
-% ****************************************************************************************************
+
+% tables, (sub)figures, and captions
 \usepackage{booktabs}                                         % Horizontal rules in tables
-% \usepackage{tabularx} % better tables
-\usepackage[normal]{threeparttable}         			% notes in tables
+\usepackage[normal]{threeparttable}         		       	% notes in tables
     \usepackage{etoolbox}                                       % fixes bug with threeparttable and situnitx
       \robustify\tnote                                          %
-% 
-%  \addtokomafont{sectioning}{\rmfamily\boldmath}         % bold math in section headings
-   
 \usepackage{longtable}
 \usepackage{caption}
-% \captionsetup{font=small}
+	% \captionsetup{font=small}
 \addtokomafont{caption}{\small}
 \setcapindent{1em}
 \usepackage[list=true,listformat=simple]{subcaption} 
 \makeatletter
 \g@addto@macro\p@subfigure{.}
 \makeatother
-% ****************************************************************************************************
-% ******************************************************************** 
-% Graphics, TikZ
-% ******************************************************************** 
-\usepackage{pgfplots}
-\usepackage{tikzscale}
-% \usepackage{tikz}
-\usepackage{standalone}
 
 
-% ****************************************************************************************************
 % Math and scientific packages
-% ****************************************************************************************************
-
-\usepackage[locale = US,mode=math]{siunitx}             % SI units
+ \usepackage{mathtools}
+\usepackage[locale = US,mode=math]{siunitx}   % SI units
     \sisetup{%
         separate-uncertainty  =  true         % use \pm for seperating value and uncertainty
     }
@@ -104,27 +63,15 @@
 \usepackage[version=3]{mhchem}                % chemical molecular formulae and chemical equations
 
 
-% ****************************************************************************************************    		   
-
-
-% ****************************************************************************************************
-% 6. PDFLaTeX, hyperreferences and citation backreferences
-% ****************************************************************************************************
-% ********************************************************************
-% Using PDFLaTeX
-% ********************************************************************
+% PDFLaTeX
 \PassOptionsToPackage{pdftex,hyperfootnotes=false,pdfpagelabels,hidelinks}{hyperref}
 	\usepackage{hyperref}  % backref linktocpage pagebackref
 \pdfcompresslevel=9
 \pdfadjustspacing=1 
-\PassOptionsToPackage{pdftex}{graphicx}
-\PassOptionsToPackage{demo}{graphicx}
-    \usepackage{graphicx} 
-    \graphicspath{{./gfx/}}
+    \usepackage{graphicx}
 
-% ********************************************************************
-% Hyperreferences
-% ********************************************************************
+
+% Hyperref setup
 \hypersetup{%
     %draft,	% = no hyperlinking at all (useful in b/w printouts)
 %     colorlinks=true, linktocpage=true, pdfstartpage=3, pdfstartview=FitV,%
@@ -142,61 +89,3 @@
     pdfcreator={pdfLaTeX},%
     pdfproducer={LaTeX with hyperref}%
 }   
-
-% ********************************************************************
-% Setup autoreferences
-% ********************************************************************
-% There are some issues regarding autorefnames
-% http://www.ureader.de/msg/136221647.aspx
-% http://www.tex.ac.uk/cgi-bin/texfaq2html?label=latexwords
-% you have to redefine the makros for the 
-% language you use, e.g., american, ngerman
-% (as chosen when loading babel/AtBeginDocument)
-% ********************************************************************
-\makeatletter
-\@ifpackageloaded{babel}%
-    {%
-       \addto\extrasamerican{%
-					\renewcommand*{\figureautorefname}{Figure}%
-					\renewcommand*{\tableautorefname}{Table}%
-					\renewcommand*{\partautorefname}{Part}%
-					\renewcommand*{\chapterautorefname}{Chapter}%
-					\renewcommand*{\sectionautorefname}{Section}%
-					\renewcommand*{\subsectionautorefname}{Section}%
-					\renewcommand*{\subsubsectionautorefname}{Section}% 	
-				}%
-       \addto\extrasngerman{% 
-					\renewcommand*{\paragraphautorefname}{Absatz}%
-					\renewcommand*{\subparagraphautorefname}{Unterabsatz}%
-					\renewcommand*{\footnoteautorefname}{Fu\"snote}%
-					\renewcommand*{\FancyVerbLineautorefname}{Zeile}%
-					\renewcommand*{\theoremautorefname}{Theorem}%
-					\renewcommand*{\appendixautorefname}{Anhang}%
-					\renewcommand*{\equationautorefname}{Gleichung}%        
-					\renewcommand*{\itemautorefname}{Punkt}%
-				}%
-    }{\relax}
-\makeatother
-
-% ********************************************************************
-% Changing the text area
-% ********************************************************************
-%\linespread{1.05} % a bit more for Palatino
-%\areaset[current]{312pt}{761pt} % 686 (factor 2.2) + 33 head + 42 head \the\footskip
-%\setlength{\marginparwidth}{7em}%
-%\setlength{\marginparsep}{2em}%
-
-
-% ********************************************************************
-% Fonts
-% ********************************************************************
-\usepackage{libertine}                   % ost option?
-\usepackage[slantedGreek,libertine]{newtxmath}
-\usepackage{inconsolata}
-\usepackage{bm}                               % boldface math
-\usepackage{microtype}                        % slightly tweak font spacing for aesthetics
-\KOMAoptions{DIV=last}
-% ****************************************************************************************************
-
-\usepackage{placeins}
-\usepackage{cleveref}

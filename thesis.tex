@@ -1,4 +1,4 @@
-\documentclass[%
+\documentclass[
  paper=A4,
  pagesize,
  abstract,
@@ -6,19 +6,15 @@
  american,
  11pt,
  titlepage,
- BCOR=12mm,
- DIV=8,
+  BCOR=12mm,
  twoside,
  footinclude=false,
  headinclude=false
  ]{scrreprt}
 
-
 \input{thesis-config}
 \input{bib-config}
 \input{macros}
-\input{tikz-config}
-
 
 \begin{document}
   \selectlanguage{american}
@@ -37,7 +33,7 @@
 
   \appendix
     \include{chapters/appendix}
-
+    \include{frontbackmatter/publications}
     \include{frontbackmatter/bibliography}
     \include{frontbackmatter/acknowledgments}
     \include{frontbackmatter/declaration}
