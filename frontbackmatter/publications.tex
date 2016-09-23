@@ -1,13 +1,12 @@
 \chapter*{Publications}\label{app:publications}
 
-
-\begin{refsection}
-	\nocite{angenendt}
-	\printbibliography[title={Print},heading=subbibliography, sorting=ynt]
+\begin{refsection}[own_publications]
+	\nocite{*}
+	\printbibliography[title={Print},heading=subbibliography,env=ownpubs,keyword={Own},keyword={Paper}]
 \end{refsection}
 
-\begin{refsection}
+\begin{refsection}[own_publications]
 	\defbibnote{note}{Only those presentations are listed where thesis author is first author and presenter.}
-	\nocite{doody}
-	\printbibliography[title={Oral and Poster Presentations},heading=subbibliography,prenote=note]
+	\nocite{*}
+	\printbibliography[title={Oral and Poster Presentations},heading=subbibliography,prenote=note,env=ownpubs,keyword={Own},keyword={Presentation}]
 \end{refsection} 

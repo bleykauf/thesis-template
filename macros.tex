@@ -1,23 +1,21 @@
 % Custom commands
 
 % mathematics
-\renewcommand*{\vec}{\bm}                                      % vectors are italic boldface
+\renewcommand*{\vec}{\bm}
 \newcommand*{\mtrx}[1]{\mathbf{#1}}                            % matrices are upright boldface
 \newcommand*{\e}{\mathrm{e}}                                   % Euler's number
 \renewcommand*{\i}{\mathrm{i}}                                 % imaginary unit
 \renewcommand*{\pi}{\uppi}                                     % pi is a constant
 \renewcommand*{\d}[1]{\mathop{}\!\mathrm{d}#1\mathop{}\!}      % differential operator
 \DeclareMathOperator{\const}{const.}                           % constant
-\renewcommand*{\partial}{\uppartial}                           % derivatives are operators and should be set upright
-\DeclarePairedDelimiter\abs{\lvert}{\rvert}                    % absolute value
+
 \newcommand*\mean[1]{\bar{#1}}                                 % mean value
 \DeclareMathOperator{\diag}{diag}                              % diagonal elements
 \newcommand*{\transpose}{\intercal}                            % matrix transpose
 \DeclareMathOperator{\sgn}{sgn}                                % sign operator
 
 % physics
-\newcommand*{\Del}[1]{\mathop{}\!\upDelta #1\mathop{}\!}       % fix spacing for delta, denoting differences (delta x = x_2 - x_1)
-\newcommand*{\del}[1]{\mathop{}\!\updelta #1\mathop{}\!}       % same for lowercase delta
+\newcommand*{\Del}[1]{\mathop{}\!\increment #1\mathop{}\!}       % fix spacing for delta, denoting differences (delta x = x_2 - x_1)
 \newcommand*{\kb}{k_\text{b}}                                  % Boltzmann constant
 \newcommand*{\op}{\hat}                                        % quantum mechanical operators
 

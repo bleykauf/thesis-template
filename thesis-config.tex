@@ -1,40 +1,29 @@
-%Personal data and user ad-hoc commands
-\newcommand*{\myTitle}{The effect of wavefront aberrations in light-pulse atom interferometry\xspace}
-\newcommand*{\mySubtitle}{Masterarbeit zur Erlangung des akademischen Grades Master of Science (M.\,Sc.) im Fach Physik \xspace}
-\newcommand*{\myDegree}{\xspace}
-\newcommand*{\myName}{Bastian Leykauf\xspace}
-\newcommand*{\myProf}{Prof.~Achim~Peters,~PhD\xspace}
-\newcommand*{\myOtherProf}{Prof.~Dr.~Kurt~Busch\xspace}
-\newcommand*{\myFaculty}{Mathematisch-Naturwissenschaftliche Fakult\"{a}t I\xspace}
-\newcommand*{\myDepartment}{Arbeitsgruppe Quantenoptische Metrologie\xspace}
-\newcommand*{\myUni}{Humboldt-Universit\"{a}t zu Berlin\xspace}
-\newcommand*{\myLocation}{Berlin\xspace}
-\newcommand*{\myTime}{7. Februar 2014\xspace}
+% Personal data and user ad-hoc commands
+\newcommand*{\mytitle}{The Title}
+\newcommand*{\mysubtitle}{Masterarbeit zur Erlangung des akademischen Grades Master of Science (M.\,Sc.) im Fach Physik}
+\newcommand*{\mydegree}{B.Sc.}
+\newcommand*{\myname}{Bastian Leykauf}
+\newcommand*{\myprof}{Prof.~Achim~Peters,~PhD}
+\newcommand*{\myotherprof}{Prof.~Dr.~Kurt~Busch}
+\newcommand*{\myfaculty}{Mathematisch-Naturwissenschaftliche Fakultät I}
+\newcommand*{\mydepartment}{Arbeitsgruppe Quantenoptische Metrologie}
+\newcommand*{\myuniversity}{Humboldt-Universität zu Berlin}
+\newcommand*{\mylocation}{Berlin}
+\newcommand*{\mytime}{7. Februar 2014}
 
-
-% Setup
-\usepackage[utf8]{inputenc}				
-\usepackage[T1]{fontenc}  
-\usepackage[ngerman,american]{babel}					
-
-% Fonts
-\usepackage{libertine}                   		% 
+% Font and language setup
+\usepackage[no-math]{fontspec}
+\usepackage{libertine}
 \usepackage[slantedGreek,libertine]{newtxmath} 	% captial greek letters are slanted
-\usepackage{inconsolata}					 	% monotype
-\usepackage{bm}                            	    % boldface math
+\usepackage{bm}
+
 \usepackage{microtype}                       	% slightly tweak font spacing for aesthetics
-\KOMAoptions{DIV=last}
-  %\addtokomafont{sectioning}{\rmfamily\boldmath}         % bold math in section headings
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage{german}					
+\usepackage{csquotes}        % quotations
 
-
-% General useful packages
-\usepackage{url}                    % typesetting URLs
-\usepackage[babel]{csquotes}        % quotations
-\usepackage{textcomp} 				% fix warning with missing font shapes
-\usepackage{xspace}					% to get the spacing after macros right  
-
-
-% tables, (sub)figures, and captions
+% Tables, (sub)figures, and captions, URLs
 \usepackage{booktabs}                                         % Horizontal rules in tables
 \usepackage[normal]{threeparttable}         		       	% notes in tables
     \usepackage{etoolbox}                                       % fixes bug with threeparttable and situnitx
@@ -48,44 +37,16 @@
 \makeatletter
 \g@addto@macro\p@subfigure{.}
 \makeatother
-
+\usepackage{url}                    % typesetting URLs
+\usepackage{graphicx}
 
 % Math and scientific packages
- \usepackage{mathtools}
+\usepackage{amsmath}
+%\usepackage[math-style=ISO,bold-style=ISO,partial=upright]{unicode-math}
 \usepackage[locale = US,mode=math]{siunitx}   % SI units
     \sisetup{%
         separate-uncertainty  =  true         % use \pm for seperating value and uncertainty
     }
 \usepackage{braket}                           % Dirac bras, kets and brakets
 \usepackage{bropd}                            % automatic bracket matching and differential operators
-\usepackage{xfrac}                            % slanted fractions
-\usepackage{amssymb}                          % additional math symbols
-\usepackage[version=3]{mhchem}                % chemical molecular formulae and chemical equations
-
-
-% PDFLaTeX
-\PassOptionsToPackage{pdftex,hyperfootnotes=false,pdfpagelabels,hidelinks}{hyperref}
-	\usepackage{hyperref}  % backref linktocpage pagebackref
-\pdfcompresslevel=9
-\pdfadjustspacing=1 
-    \usepackage{graphicx}
-
-
-% Hyperref setup
-\hypersetup{%
-    %draft,	% = no hyperlinking at all (useful in b/w printouts)
-%     colorlinks=true, linktocpage=true, pdfstartpage=3, pdfstartview=FitV,%
-    % uncomment the following line if you want to have black links (e.g., for printing)
-    %colorlinks=false, linktocpage=false, pdfborder={0 0 0}, pdfstartpage=3, pdfstartview=FitV,% 
-    breaklinks=true, pdfpagemode=UseNone, pageanchor=true, pdfpagemode=UseOutlines,%
-    plainpages=false, bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=1,%
-    hypertexnames=true, pdfhighlight=/O,%nesting=true,%frenchlinks,%
-%     urlcolor=webbrown, linkcolor=RoyalBlue, citecolor=webgreen, %pagecolor=RoyalBlue,%
-    %urlcolor=Black, linkcolor=Black, citecolor=Black, %pagecolor=Black,%
-    pdftitle={\myTitle},%
-    pdfauthor={\textcopyright\ \myName, \myUni, \myFaculty},%
-    pdfsubject={},%
-    pdfkeywords={},%
-    pdfcreator={pdfLaTeX},%
-    pdfproducer={LaTeX with hyperref}%
-}   
+\usepackage[version=3]{mhchem}                % chemical molecular formulae and chemical equations   

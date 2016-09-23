@@ -2,8 +2,6 @@
  paper=A4,
  pagesize,
  abstract,
- ngerman,
- american,
  11pt,
  titlepage,
   BCOR=12mm,
@@ -17,7 +15,6 @@
 \input{macros}
 
 \begin{document}
-  \selectlanguage{american}
   \pagenumbering{roman}
   \pagestyle{plain}
     \include{frontbackmatter/titlepage}
@@ -28,7 +25,7 @@
     \include{chapters/introduction}
     \include{chapters/theory}
     \include{chapters/experiment}
-    \include{chapters/results}
+   \include{chapters/results}
     \include{chapters/conclusion}
 
   \appendix
