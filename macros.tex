@@ -2,6 +2,7 @@
 
 % mathematics
 \renewcommand*{\vec}{\bm}
+\newcommand*{\tensor}{\mathbfsf}
 \newcommand*{\mtrx}[1]{\mathbf{#1}}                            % matrices are upright boldface
 \newcommand*{\e}{\mathrm{e}}                                   % Euler's number
 \renewcommand*{\i}{\mathrm{i}}                                 % imaginary unit
@@ -9,22 +10,21 @@
 \renewcommand*{\d}[1]{\mathop{}\!\mathrm{d}#1\mathop{}\!}      % differential operator
 \DeclareMathOperator{\const}{const.}                           % constant
 
-\newcommand*\mean[1]{\bar{#1}}                                 % mean value
+%\newcommand*\mean[1]{\bar{#1}}                                 % mean value
 \DeclareMathOperator{\diag}{diag}                              % diagonal elements
 \newcommand*{\transpose}{\intercal}                            % matrix transpose
 \DeclareMathOperator{\sgn}{sgn}                                % sign operator
+\DeclareMathOperator{\Tr}{Tr}
 
 % physics
 \newcommand*{\Del}[1]{\mathop{}\!\increment #1\mathop{}\!}       % fix spacing for delta, denoting differences (delta x = x_2 - x_1)
 \newcommand*{\kb}{k_\text{b}}                                  % Boltzmann constant
 \newcommand*{\op}{\hat}                                        % quantum mechanical operators
+\newcommand*{\snr}{\mathit{SNR}}
 
-% Declare new units
+% declare new units
 \DeclareSIUnit\Gal{Gal}
-
-% misc
-\newcommand{\mathematica}{\textsc{Mathematica}}					% Mathematica in small caps 
-\newcommand*{\matlab}{\textsc{Matlab}}							% Matlab in small caps 
-\newcommand*{\email}[1]{\href{mailto:#1}{#1}}					% email adresses
-\newcommand*{\code}[1]{\texttt{#1}}                             % function names and scripts
-
+\DeclareSIUnit{\E}{E}
+ \DeclareSIUnit{\sqrthz}{\hertz\tothe{1/2}}
+ 
+ \newcommand{\code}{\texttt}

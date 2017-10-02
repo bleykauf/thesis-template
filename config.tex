@@ -1,0 +1,86 @@
+% Personal data and user ad-hoc commands
+\newcommand*{\mytitle}{Bachelor/Master thesis template}
+\newcommand*{\mysubtitle}{Masterarbeit zur Erlangung des akademischen Grades Master of Science (M.\,Sc.) im Fach Physik}
+\newcommand*{\mydegree}{M.Sc.}
+\newcommand*{\myname}{Bastian Leykauf}
+\newcommand*{\myprof}{Prof.~Dr.~Albert~Einstein}
+\newcommand*{\myotherprof}{Prof.~Dr.~Paul~Dirac}
+\newcommand*{\myfaculty}{Mathematisch-Naturwissenschaftliche Fakultät}
+\newcommand*{\mydepartment}{Arbeitsgruppe Quantenoptische Metrologie}
+\newcommand*{\myuniversity}{Humboldt-Universität zu Berlin}
+\newcommand*{\mylocation}{Berlin}
+\newcommand*{\mytime}{\today}
+
+% Font and language setup
+\usepackage[no-math]{fontspec}
+\usepackage{libertine}
+\usepackage[slantedGreek, libertine]{newtxmath} % captial greek letters are slanted
+\setmonofont{Inconsolata}
+\usepackage{anyfontsize}                        % suppress some warnings
+\usepackage{microtype}                       	% slightly tweak font spacing for aesthetics
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage{german}
+
+% references
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+
+\usepackage{csquotes}        % quotes
+\usepackage[acronym, nomain, nonumberlist, nogroupskip]{glossaries} %for glossary
+\usepackage{glossary-mcols}
+\include{acronyms}
+\makeglossaries
+
+% bibliography
+\usepackage[style=phys,
+				biblabel=brackets,
+				doi=true,
+				url=true,
+				giveninits=true,
+				hyperref,
+				eprint=true,
+				urldate=edtf]{biblatex}
+\addbibresource{bibliography.bib}
+\addbibresource{own_publications.bib}
+
+% Tables, (sub)figures, and captions, URLs
+\usepackage{tabularx}
+\usepackage{booktabs}                                         % Horizontal rules in tables
+\usepackage[normal]{threeparttable}         		       	% notes in tables
+    \usepackage{etoolbox}                                       % fixes bug with threeparttable and situnitx
+      \robustify\tnote                                          %
+\usepackage{longtable}
+\usepackage{caption}
+\addtokomafont{caption}{\small}
+\setcapindent{1em}
+\usepackage{url}                    % typesetting URLs
+\usepackage{graphicx}
+\graphicspath{ {graphics/}}
+
+% math and scientific packages
+\usepackage{amsmath}
+\usepackage{bm}
+
+% units
+\usepackage[locale=US,mode=math]{siunitx}
+    \sisetup{separate-uncertainty = true,        % use \pm for seperating value and uncertainty
+    			 math-micro=\text{µ}, text-micro=µ}  % micro doesn't work with XeTeX otherwise
+\DeclareMathAlphabet{\mathbfsf}{\encodingdefault}{\sfdefault}{bx}{sl}
+
+\usepackage{braket}                           % Dirac bras, kets and brakets
+\usepackage{bropd}                            % automatic bracket matching and differential operators
+\usepackage[version=3]{mhchem}                % chemical molecular formulae and chemical equations   
+
+% Layout stuff
+\usepackage{todonotes}
+\usepackage{layouts}
+	
+\makeatletter
+\newcommand\thefontsize[1]{{#1 The current font size is: \f@size pt\par}}
+\makeatother
+
+\usepackage{epigraph}
+
+%\widowpenalty10000
+%\clubpenalty100000

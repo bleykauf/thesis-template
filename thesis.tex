@@ -1,37 +1,43 @@
 \documentclass[
- paper=A4,
- pagesize,
- abstract,
- 11pt,
- titlepage,
-  BCOR=12mm,
- twoside,
- footinclude=false,
- headinclude=false
- ]{scrreprt}
+paper=A4,
+pagesize,
+abstract,
+11pt,
+titlepage,
+BCOR=12mm,
+twoside,
+footinclude=false,
+headinclude=false
+]{scrreprt}
 
-\input{thesis-config}
-\input{bib-config}
+\input{config}
 \input{macros}
 
+\makeglossary
+
+
 \begin{document}
-  \pagenumbering{roman}
-  \pagestyle{plain}
-    \include{frontbackmatter/titlepage}
-    \include{frontbackmatter/abstract}
-    \include{frontbackmatter/contents}
-
-  \pagenumbering{arabic}
-    \include{chapters/introduction}
-    \include{chapters/theory}
-    \include{chapters/experiment}
-   \include{chapters/results}
-    \include{chapters/conclusion}
-
-  \appendix
-    \include{chapters/appendix}
-    \include{frontbackmatter/publications}
-    \include{frontbackmatter/bibliography}
-    \include{frontbackmatter/acknowledgments}
-    \include{frontbackmatter/declaration}
+	\pagenumbering{roman}
+	\pagestyle{plain}
+	\include{frontbackmatter/titlepage}
+	\include{frontbackmatter/abstract}
+	\include{frontbackmatter/contents}
+	
+	\pagestyle{headings}
+	\pagenumbering{arabic}
+	\include{chapters/introduction}
+	\include{chapters/theory}
+	\include{chapters/setup}
+	\include{chapters/experiment}
+	\include{chapters/results}
+	\include{chapters/conclusion}
+	
+	\pagestyle{plain}
+	\appendix
+	\include{chapters/appendix}
+	\include{frontbackmatter/acronyms}
+	\include{frontbackmatter/publications}
+	\include{frontbackmatter/bibliography}
+	\include{frontbackmatter/acknowledgments}
+	\include{frontbackmatter/declaration}
 \end{document}
