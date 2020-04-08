@@ -12,11 +12,43 @@
 \newcommand*{\mytime}{\today}
 
 % Font and language setup
-\usepackage[no-math]{fontspec}
-\usepackage{libertine}
-\usepackage[slantedGreek, libertine]{newtxmath} % captial greek letters are slanted
-\setmonofont{Inconsolata}
-\usepackage{anyfontsize}                        % suppress some warnings
+\usepackage{fontspec}
+
+% math and scientific packages
+\usepackage{mathtools}
+\usepackage[
+    math-style=ISO,
+    bold-style=ISO,
+    partial=upright,
+    nabla=upright
+]{unicode-math}
+
+%fonts and languages
+
+\setmainfont{LibertinusSerif}[
+    UprightFont    = *-Regular,
+    BoldFont       = *-Bold,
+    ItalicFont     = *-Italic,
+    BoldItalicFont = *-BoldItalic,
+    Ligatures      = TeX,
+    Extension      = .otf,
+    Path           = fonts/
+]
+
+\setsansfont{LibertinusSans}[
+     UprightFont    = *-Regular,
+     BoldFont       = *-Bold,
+     ItalicFont     = *-Italic,
+     Ligatures      = TeX,
+     Extension      = .otf,
+     Path           = fonts/
+]
+
+\setmathfont{LibertinusMath-Regular}[
+    Extension       = .otf,
+    Path            = fonts/
+]
+
 \usepackage{microtype}                       	% slightly tweak font spacing for aesthetics
 \usepackage{polyglossia}
 \setdefaultlanguage{english}
@@ -27,7 +59,7 @@
 \usepackage{cleveref}
 
 \usepackage{csquotes}        % quotes
-\usepackage[acronym, nomain, nonumberlist, nogroupskip]{glossaries} %for glossary
+\usepackage[acronym, nomain, nonumberlist, nogroupskip, automake]{glossaries} %for glossary
 \usepackage{glossary-mcols}
 \include{acronyms}
 \makeglossaries
@@ -58,15 +90,10 @@
 \usepackage{graphicx}
 \graphicspath{ {graphics/}}
 
-% math and scientific packages
-\usepackage{amsmath}
-\usepackage{bm}
-
 % units
 \usepackage[locale=US,mode=math]{siunitx}
     \sisetup{separate-uncertainty = true,        % use \pm for seperating value and uncertainty
     			 math-micro=\text{µ}, text-micro=µ}  % micro doesn't work with XeTeX otherwise
-\DeclareMathAlphabet{\mathbfsf}{\encodingdefault}{\sfdefault}{bx}{sl}
 
 \usepackage{braket}                           % Dirac bras, kets and brakets
 \usepackage{bropd}                            % automatic bracket matching and differential operators
@@ -74,12 +101,6 @@
 
 % Layout stuff
 \usepackage{todonotes}
-\usepackage{layouts}
-	
-\makeatletter
-\newcommand\thefontsize[1]{{#1 The current font size is: \f@size pt\par}}
-\makeatother
-
 \usepackage{epigraph}
 
 %\widowpenalty10000

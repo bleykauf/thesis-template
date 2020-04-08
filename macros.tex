@@ -1,23 +1,22 @@
 % Custom commands
 
 % mathematics
-\renewcommand*{\vec}{\bm}
+\renewcommand*{\vec}{\mathbfit}
 \newcommand*{\tensor}{\mathbfsf}
 \newcommand*{\mtrx}[1]{\mathbf{#1}}                            % matrices are upright boldface
 \newcommand*{\e}{\mathrm{e}}                                   % Euler's number
 \renewcommand*{\i}{\mathrm{i}}                                 % imaginary unit
-\renewcommand*{\pi}{\uppi}                                     % pi is a constant
-\renewcommand*{\d}[1]{\mathop{}\!\mathrm{d}#1\mathop{}\!}      % differential operator
+%\renewcommand*{\pi}{\uppi}                                     % pi is a constant
 \DeclareMathOperator{\const}{const.}                           % constant
 
 %\newcommand*\mean[1]{\bar{#1}}                                 % mean value
 \DeclareMathOperator{\diag}{diag}                              % diagonal elements
-\newcommand*{\transpose}{\intercal}                            % matrix transpose
+%\newcommand*{\transpose}{\intercal}                            % matrix transpose
 \DeclareMathOperator{\sgn}{sgn}                                % sign operator
 \DeclareMathOperator{\Tr}{Tr}
 
 % physics
-\newcommand*{\Del}[1]{\mathop{}\!\increment #1\mathop{}\!}       % fix spacing for delta, denoting differences (delta x = x_2 - x_1)
+\newcommand*{\Del}[1]{\mathop{}\!\increment #1\mathop{}\!}     % fix spacing for delta, denoting differences (delta x = x_2 - x_1)
 \newcommand*{\kb}{k_\text{b}}                                  % Boltzmann constant
 \newcommand*{\op}{\hat}                                        % quantum mechanical operators
 \newcommand*{\snr}{\mathit{SNR}}
