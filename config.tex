@@ -1,13 +1,6 @@
 % Personal data and user ad-hoc commands
-\newcommand*{\mytitle}{Bachelor/Master thesis template}
-\newcommand*{\mysubtitle}{Masterarbeit zur Erlangung des akademischen Grades Master of Science (M.\,Sc.) im Fach Physik}
 \newcommand*{\mydegree}{M.Sc.}
 \newcommand*{\myname}{Bastian Leykauf}
-\newcommand*{\myprof}{Prof.~Dr.~Albert~Einstein}
-\newcommand*{\myotherprof}{Prof.~Dr.~Paul~Dirac}
-\newcommand*{\myfaculty}{Mathematisch-Naturwissenschaftliche Fakultät}
-\newcommand*{\mydepartment}{Arbeitsgruppe Quantenoptische Metrologie}
-\newcommand*{\myuniversity}{Humboldt-Universität zu Berlin}
 \newcommand*{\mylocation}{Berlin}
 \newcommand*{\mytime}{\today}
 
@@ -65,6 +58,7 @@
 \usepackage{cleveref}
 
 \usepackage{csquotes}        % quotes
+
 \usepackage[acronym, nomain, nonumberlist, nogroupskip, automake]{glossaries} %for glossary
 \usepackage{glossary-mcols}
 \include{acronyms}
@@ -80,7 +74,6 @@
 				eprint=true,
 				backend=biber]{biblatex}
 \addbibresource{bibliography.bib}
-\addbibresource{own_publications.bib}
 
 % Tables, (sub)figures, and captions, URLs
 \usepackage{tabularx}
@@ -106,7 +99,7 @@
 \usepackage[version=3]{mhchem}                % chemical molecular formulae and chemical equations   
 
 % Layout stuff
-\usepackage{todonotes}
+\usepackage[draft]{todonotes}
 \usepackage{epigraph}
 
 %\widowpenalty10000
