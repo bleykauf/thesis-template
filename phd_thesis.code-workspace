@@ -1,0 +1,108 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "editor.rulers": [],
+        "editor.wordWrap": "on",
+        "files.exclude": {
+            "**/*.aux" : true,
+            "*.bbl" : true,
+            "*.blg" : true,
+            "*.idx" : true,
+            "*.ind" : true,
+            "*.lof" : true,
+            "*.lot" : true,
+            "*.out" : true,
+            "*.toc" : true,
+            "*.acn" : true,
+            "*.acr" : true,
+            "*.alg" : true,
+            "*.glg" : true,
+            "*.glo" : true,
+            "*.gls" : true,
+            "*.fls" : true,
+            "*.log" : true,
+            "*.fdb_latexmk" : true,
+            "*.snm" : true,
+            "*.synctex(busy)" : true,
+            "*.synctex.gz(busy)" : true,
+            "*.nav" : true,
+            "*.run.xml" : true,
+            "*.bcf" : true,
+            "*.ist" : true,
+        },
+        "latex-workshop.view.pdf.viewer": "tab",
+        "latex-workshop.latex.clean.subfolder.enabled": true,
+        "latex-workshop.latex.autoClean.run": "onFailed",
+        "latex-workshop.latex.recipes": [
+            {
+                "name": "xelatexmk 🔃",
+                "tools": [
+                    "xelatexmk"
+                ]
+            },
+        ],
+        "latex-workshop.latex.tools": [
+            {
+                "name": "xelatexmk",
+                "command": "latexmk",
+                "args": [
+                    "-xelatex",
+                    "--shell-escape",
+                    "-synctex=1",
+                    "-interaction=nonstopmode",
+                    "-file-line-error",
+                    "-outdir=%OUTDIR%",
+                    "%DOC%"
+                ],
+                "env": {}
+            },
+            {
+                "name": "latexmk_rconly",
+                "command": "latexmk",
+                "args": [
+                    "%DOC%"
+                ],
+                "env": {}
+            },
+            {
+                "name": "bibtex",
+                "command": "bibtex",
+                "args": [
+                    "%DOCFILE%"
+                ],
+                "env": {}
+            },
+        ],
+        "latex-workshop.latex.clean.fileTypes": [
+            "*.aux",
+            "*.bbl",
+            "*.blg",
+            "*.idx",
+            "*.ind",
+            "*.lof",
+            "*.lot",
+            "*.out",
+            "*.toc",
+            "*.acn",
+            "*.acr",
+            "*.alg",
+            "*.glg",
+            "*.glo",
+            "*.gls",
+            "*.fls",
+            "*.log",
+            "*.fdb_latexmk",
+            "*.snm",
+            "*.synctex(busy)",
+            "*.synctex.gz(busy)",
+            "*.nav",
+            "*.run.xml",
+            "*.bcf",
+            "*.ist"
+        ],
+    }
+}
