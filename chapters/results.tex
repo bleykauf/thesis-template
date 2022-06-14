@@ -1,0 +1,62 @@
+\cleardoublepage
+
+\chapter{Mathematik und Physik}
+\section{Benutung verschiedener Mathematik-Umgebungen}
+{\AmS}-{\LaTeX} ist eine Reihe von Dokumentenklassen und Paketen der American Mathematical Society. Hier sollen kurz einige Umgebungen, die \code{mathtools} zur Verfügung stellt, vorgestellt werden.
+
+Gl.\,\ref{eq:equation} ist eine einfache numerierte Gleichung.
+\begin{equation}\label{eq:equation}
+ a = b
+\end{equation}
+Eine Gleichung mit Umformungenüber mehrere Zeilen, aber nur einer Nummer:
+\begin{equation}
+ \begin{split}
+  a& = b+c-d\\
+   & \quad + e - f\\
+   & = g+h\\
+   & = i
+ \end{split}
+\end{equation}
+Ein Ausdruck, der sich über mehr als eine Zeile erstreckt:
+\begin{multline}
+ a + b + c +d + e + f + a + b + c +d + e + f \\
+ + g + h + i + j + k + l + m + n+ g + h + i + j + k + l + m + n
+\end{multline}
+Vier ausgerichtete Gleichungen:
+\begin{align}
+ a_{11}& = b_{11}&
+ a_{12}& = b_{12}&\\
+ a_{21}& = b_{21}&
+ a_{22}& = b_{22} + c_{22}
+\end{align}
+\section{Weitere nützliche Mathe-Pakete}
+\subsection{Differentialgleichungen}
+Mit \code{propd} lassen sich Differentialgleichugen und -operatoren leicht setzen:
+\begin{gather}
+ \od{y}{x}\\
+ \od[2]{u}{x} = -\omega^2 u\\
+ \pd{u}{t} = 6u \pd{u}{x} - \pd[3]{u}{x}\\
+ \pd{u}{x,x,t}\\
+ \pd{}{z}{x+y}\\
+ \pd{!}{x}
+\end{gather}
+\subsection{Chemische Formeln}
+Bei chemischen Formeln hilft \code{mhchem}, z.\,B. kann leicht \ce{^{235}_{92}U} gesetzt werden.
+\subsection{Bras und Kets}
+Das Paket \code{braket} hilft in der u
+Quantenmechanik:
+\begin{gather}
+ \bra{\Phi}\\
+ \ket{\Psi}\\
+ \braket{\psi|\hat{H}|\phi}
+\end{gather}
+\subsection{Einheiten}
+Sehr nützlich ist auch \code{siunitx}. Es setzt Einheiten immer aufrecht und mit passendem Abstand zum Wert. Auch Unsicherheiten lassen sich bequem angeben. Hier soll außerdem kurz die korrekten Verwendung von mathematischen Konstanten, wie beispielsweise die imaginäre Einheit oder die Kreiszahl, gezeigt werden. Diese werden nämlich -- anders als physikalische Konstanten, deren Wert durch Messungen ermittelt wird und sich deshalb grundsätzlich ändern kann -- aufrecht und nicht kursiv gesetzt.
+\begin{gather}
+ \hbar = \SI[separate-uncertainty=false]{6.62606957(29)e-34}{\joule\second}\\
+ g = \SI{9.81(1)}{\meter \per \s^2}\\
+ \pi \equiv 3\\
+ i \neq \i\\
+ e = \SI{1.60217657e-19}{\coulomb}\\
+ \e \approx \num{2.71828}\\
+\end{gather}
