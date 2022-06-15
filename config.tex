@@ -65,14 +65,17 @@
 \makeglossaries
 
 % bibliography
-\usepackage[style=phys,
+\usepackage[
+    backend=biber,
     biblabel=brackets,
     doi=true,
-    url=true,
+    eprint=true,
+    url=false,
     giveninits=true,
     hyperref,
-    eprint=true,
-    backend=biber]{biblatex}
+    style=phys,
+    urldate=iso8601,
+]{biblatex}
 \addbibresource{bibliography.bib}
 
 % Tables, (sub)figures, and captions, URLs
