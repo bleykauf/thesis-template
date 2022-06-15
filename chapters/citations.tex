@@ -1,0 +1,54 @@
+\cleardoublepage
+\chapter{Citations, bibliography and tables}\label{ch:conclusion}
+
+\section{Citations and bibliography}
+This template uses \code{biblatex}. It allows you to cite titles and authors, i.e. \citetitle{freierMobileQuantumGravity2016} was written by \citeauthor{freierMobileQuantumGravity2016}. Depending on context, either the \code{textcite} command, \textcite{schkolnikEffectWavefrontAberrations2015}, or the \code{parencite} command, \parencite{schkolnikEffectWavefrontAberrations2015}, is used.
+
+
+\section{Tables}
+The two basic rules for nice looking tables are:
+\begin{enumerate}
+    \item Never use vertical lines.
+    \item Never use double lines.
+\end{enumerate}
+More rules can be find in the \code{booktabs} documentation.
+
+
+Table \,\ref{tab:tabelle} show the use of \code{threeparttable} which allows to use footnotes inside tables. In addition column style provided by \code{siunitx} is demonstrated.
+
+\begin{table}[htb]
+    \centering
+    \caption[Usage of \texttt{table}. This shows up in the list of tables]{Note that $E_\text{tot,1}$ and $E_\text{tot,2}$ yield the same result even though they are typeset differently in the source code.}
+    \label{tab:tabelle}
+    \begin{threeparttable}
+        \sisetup{
+            table-align-text-post = false
+        }
+        \begin{tabular}{
+                S[table-format = 2.2]
+                c
+                S[table-format = 2.1(1),separate-uncertainty = true]
+                S[table-format = 2.1(1),separate-uncertainty = true]
+                S[table-format = 4.2(1),separate-uncertainty = false]
+                S[table-format = 3.1,round-mode=places,round-precision=1]
+            }
+            \toprule
+            {$N_{\text{particles,min}}$}                  &
+            {This}                                        &
+            {$E_\text{tot,1}$ / \si{\giga \electronvolt}} &
+            {$E_\text{tot,2}$ / \si{\GeV}}                &
+            {$F$ / \si{\newton}}                          &
+            {${N'}$}                                                                                             \\
+            \midrule
+            10.14\tnote{a}                                & is       & 18.3(2) & 18.3+-0.2 & 4018.95(3) & 282.25 \\
+            11.54                                         & just     & 18.4(3) & 18.4+-0.3 & 3991.32(4) & 246.45 \\
+            12.34                                         & centered & 10.4(2) & 10.4+-0.2 & 3981.19(2) & 230.78 \\
+            13.63\tnote{**}                               & text.    & 12.2(6) & 12.2+-0.6 & 3976.35(3) & 221.18 \\
+            \bottomrule
+        \end{tabular}
+        \begin{tablenotes}
+            \small{\item[a] This is a footnote}
+            \small{\item[**] Little stars also work}
+        \end{tablenotes}
+    \end{threeparttable}
+\end{table}

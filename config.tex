@@ -29,12 +29,12 @@
 ]
 
 \setsansfont{LibertinusSans}[
-     UprightFont    = *-Regular,
-     BoldFont       = *-Bold,
-     ItalicFont     = *-Italic,
-     Ligatures      = TeX,
-     Extension      = .otf,
-     Path           = fonts/
+    UprightFont    = *-Regular,
+    BoldFont       = *-Bold,
+    ItalicFont     = *-Italic,
+    Ligatures      = TeX,
+    Extension      = .otf,
+    Path           = fonts/
 ]
 
 \setmathfont{LibertinusMath-Regular}[
@@ -66,21 +66,21 @@
 
 % bibliography
 \usepackage[style=phys,
-				biblabel=brackets,
-				doi=true,
-				url=true,
-				giveninits=true,
-				hyperref,
-				eprint=true,
-				backend=biber]{biblatex}
+    biblabel=brackets,
+    doi=true,
+    url=true,
+    giveninits=true,
+    hyperref,
+    eprint=true,
+    backend=biber]{biblatex}
 \addbibresource{bibliography.bib}
 
 % Tables, (sub)figures, and captions, URLs
 \usepackage{tabularx}
 \usepackage{booktabs}                                         % Horizontal rules in tables
 \usepackage[normal]{threeparttable}         		       	% notes in tables
-    \usepackage{etoolbox}                                       % fixes bug with threeparttable and situnitx
-      \robustify\tnote                                          %
+\usepackage{etoolbox}                                       % fixes bug with threeparttable and situnitx
+\robustify\tnote                                          %
 \usepackage{longtable}
 \usepackage{caption}
 \addtokomafont{caption}{\small}
@@ -91,8 +91,8 @@
 
 % units
 \usepackage[locale=US,mode=math]{siunitx}
-    \sisetup{separate-uncertainty = true,        % use \pm for seperating value and uncertainty
-    			 math-micro=\text{µ}, text-micro=µ}  % micro doesn't work with XeTeX otherwise
+\sisetup{separate-uncertainty = true,            % use \pm for seperating value and uncertainty
+    math-micro=\text{µ}, text-micro=µ}  % micro doesn't work with XeTeX otherwise
 
 \usepackage{braket}                           % Dirac bras, kets and brakets
 \usepackage{bropd}                            % automatic bracket matching and differential operators

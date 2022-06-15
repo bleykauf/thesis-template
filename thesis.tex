@@ -16,26 +16,23 @@ headinclude=false
 \makeglossary
 
 \begin{document}
-	\pagenumbering{roman}
-	\pagestyle{plain}
-	\include{frontbackmatter/titlepage}
-	\include{frontbackmatter/abstract}
-	\include{frontbackmatter/contents}
-	\include{frontbackmatter/acronyms}
-	
-	\pagestyle{headings}
-	\pagenumbering{arabic}
-	\include{chapters/introduction} 
-	\include{chapters/theory}
-	\include{chapters/experiment}
-	\include{chapters/results}
-	\include{chapters/conclusion} 
-	
-	\pagestyle{plain}
-	\appendix
-	\include{chapters/appendix}
-	\include{frontbackmatter/publications}
-	\include{frontbackmatter/bibliography}
-	\include{frontbackmatter/acknowledgments}
-	\include{frontbackmatter/declaration}
+\pagenumbering{roman}
+\pagestyle{plain}
+\include{frontbackmatter/titlepage}
+\include{frontbackmatter/abstract}
+\include{frontbackmatter/contents}
+\include{frontbackmatter/acronyms}
+
+\pagestyle{headings}
+\pagenumbering{arabic}
+\include{chapters/maths}
+\include{chapters/citations}
+
+\pagestyle{plain}
+\appendix
+\include{chapters/appendix}
+\include{frontbackmatter/publications}
+\include{frontbackmatter/bibliography}
+\include{frontbackmatter/acknowledgments}
+\include{frontbackmatter/declaration}
 \end{document}
