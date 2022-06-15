@@ -34,3 +34,6 @@ Note that when using `\Cref` the prefix will not be abbreviated. This is expecte
 
 ### `pst-optexp`
 This package might be useful for drawing optical setups: https://ctan.org/pkg/pst-optexp?lang=en
+
+### Using pre-commit
+A `.pre-commit-config.yaml` is provided for enforcing indentation via `latexindent.pl`. Install it via `pre-commit install`.

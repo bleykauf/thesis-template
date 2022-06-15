@@ -3,3 +3,8 @@ XeLaTeX
 Zotero
 biblatex
 BibLaTeX
+beamsplitter
+LTeX
+Chania
+Arcachon
+EGU

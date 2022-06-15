@@ -11,3 +11,22 @@
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QWith propd it is possible to typeset differential equations and operators: \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsiunitx is very useful.\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qacousto-optic modulator Bundesamt für Kartographie und Geodäsie, engl.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qenglish german\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qacousto-optic modulator \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, engl.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qacousto-optic modulator \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, engl.\\E$"}
+{"rule":"PLURAL_VERB_AFTER_THIS","sentence":"^\\QGit repository\nFork this repository\nInitialize Git Large File Storage (LFS) by running \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q (this is for storing binary files, images, PDFs, etc.).\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qmaxnames 99 schkolnikEffectWavefrontAberrations2015 maxnames 99 freierMobileQuantumGravity2016 maxnames 99 huMappingAbsoluteMagnetic2017 maxnames 99 huObservationVectorTensor2018 maxnames 99 wiegandSinglelaserAlternatingfrequencyMagnetooptical2019 maxnames 99 canuelELGAREuropeanLaboratory2020 maxnames 99 canuelTechnologiesELGARLarge2020\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qmaxnames 99 schkolnikEffectWavefrontAberrations2015 maxnames 99 freierMobileQuantumGravity2016 maxnames 99 huMappingAbsoluteMagnetic2017 maxnames 99 huObservationVectorTensor2018 maxnames 99 wiegandSinglelaserAlternatingfrequencyMagnetooptical2019 maxnames 99 canuelELGAREuropeanLaboratory2020 maxnames 99 canuelTechnologiesELGARLarge2020\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QLibertinusSans[ UprightFont = *-Regular, BoldFont = *-Bold, ItalicFont = *-Italic, Ligatures = TeX, Extension = .otf, Path = fonts/ ]\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QLibertinusMath-Regular[ Extension = .otf, Path = fonts/ ]\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QInconsolata-Regular[ Extension = .otf, Path = fonts/ ]\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QInconsolata-Regular[ Extension = .otf, Path = fonts/ ]\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QLibertinusMath-Regular[ Extension = .otf, Path = fonts/ ]\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QLibertinusSans[ UprightFont = *-Regular, BoldFont = *-Bold, ItalicFont = *-Italic, Ligatures = TeX, Extension = .otf, Path = fonts/ ]\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qenglish german, french, latin\\E$"}
+{"rule":"THE_FRENCH","sentence":"^\\Qenglish german, french, latin\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qenglish german, french\\E$"}
+{"rule":"THE_FRENCH","sentence":"^\\Qenglish german, french\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qlistof leveldown\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qlistof leveldown\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q show the use of threeparttable which allows using footnotes inside tables.\\E$"}

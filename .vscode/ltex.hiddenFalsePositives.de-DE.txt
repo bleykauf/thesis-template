@@ -1,0 +1,6 @@
+{"rule":"F_ANSTATT_PH","sentence":"^\\QBundesamt für Kartographie und Geodäsie\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qnat.) im Fach Physik eingereicht an der Mathematisch-Naturwissenschaftlichen Fakultät der Humboldt-Universität zu Berlin von , geboren am 18. August 1989 in Neustadt an der Aisch Präsidentin der Humboldt-Universität zu Berlin: Prof. Dr.-Ing. Sabine Kunst Dekan der Mathematisch-Naturwissenschaftlichen Fakultät: Prof. Dr. Elmar Kulke Gutachter: 1.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q,\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Qnat.) im Fach Physik eingereicht an der Mathematisch-Naturwissenschaftlichen Fakultät der Humboldt-Universität zu Berlin von , geboren am 18. August 1989 in Neustadt an der Aisch Präsidentin der Humboldt-Universität zu Berlin: Prof. Dr.-Ing. Sabine Kunst Dekan der Mathematisch-Naturwissenschaftlichen Fakultät: Prof. Dr. Elmar Kulke Gutachter: 1.\\E$"}
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QJohn Doe 3.\\E$"}
+{"rule":"GERMAN_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QProf. Achim Peters, PhD\\E$"}
