@@ -1,6 +1,6 @@
 # Thesis template
 
-Uses XeLaTeX, TeX Live and texmk. Made for use in VS Code with the LaTeX Workshop extension.
+Uses XeLaTeX, TeX Live and `xelatexmk`. Made for use in VS Code with the LaTeX Workshop extension.
 
 ## Installation
 
@@ -17,11 +17,11 @@ Uses XeLaTeX, TeX Live and texmk. Made for use in VS Code with the LaTeX Worksho
 * Settings for LaTeX Workshop are stored in the `.code-workspace` file.
 
 ### Bibliography
-I recommend Zotero for organizing the bibliography as it works much better with biblatex than other solutions I tried. Make sure to install the extension Better Bibtex and use "Better BibLaTeX" when exporting the library (not "Better BibTeX"). Tick the "Keep updated" box to automatically sync the library.
+I recommend Zotero for organizing the bibliography as it works much better with biblatex than other solutions I tried. Make sure to install the extension Better BibTeX and use "Better BibLaTeX" when exporting the library (not "Better BibTeX"). Tick the "Keep updated" box to automatically sync the library.
 
 ## Other
 ### Color map
-The standard color map of matplotlib for usage in Inkscape can be found in the graphics subfolder.
+The standard color map of Matplotlib for usage in Inkscape can be found in the graphics subfolder.
 
 ### Spell and grammar checking
 The LTeX extension for VS Code seems to work pretty well.
