@@ -91,3 +91,4 @@
 
 # custom
 *.xdv
+*.synctex(busy)
