@@ -1,0 +1,12 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThis template uses biblatex.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIn addition column style provided by siunitx is demonstrated.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QTable \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q show the use of threeparttable which allows using footnotes inside tables.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIn addition, column style provided by siunitx is demonstrated.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QMore rules can be find in the booktabs documentation.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QDepending on context, either the textcite command, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, or the parencite command, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, is used.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QMore rules can be found in the booktabs documentation.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe package mathtools extends this functionality and contains some fixes.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QFor quantum mechanics, use the braket package:\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe package mhchem is useful to typeset chemical formulae, like ^235_92U.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QWith propd it is possible to typeset differential equations and operators: \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsiunitx is very useful.\\E$"}
