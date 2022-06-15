@@ -18,3 +18,7 @@ Uses XeLaTeX, TeX Live and texmk. Made for use in VS Code with the LaTeX Worksho
 
 ### Bibliography
 I recommend Zotero for organizing the bibligraphy as it works much better with biblatex than other solutions I tried. Make sure to install the extension Better Bibtex and use "Better BibLaTeX" when exporting the library (not "Better BibTeX"). Tick the "Keep updated" box to automatically sync the library.
+
+## Other
+
+The standard colormap of matplotlib for usage in Inkscape can be found in the graphics subfolder.
