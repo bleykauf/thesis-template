@@ -88,3 +88,6 @@
 *.backup
 *.bak
 *.kate-swp
+
+# custom
+*.xdv
