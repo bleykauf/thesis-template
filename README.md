@@ -28,3 +28,6 @@ The LTeX extension for VS Code seems to work pretty well.
 
 ### `latexmkrc`
 To make glossaries work, a `latexmkrc` configuration file is used. See also https://tex.stackexchange.com/questions/1226/how-to-make-latexmk-use-makeglossaries.
+
+### `cleverref`
+Note that when using `\Cref` the prefix will not be abbreviated. This is expected behavior since in English the first word of a sentence should not be abbreviated according to the documentation.
