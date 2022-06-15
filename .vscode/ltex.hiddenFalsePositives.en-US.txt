@@ -10,3 +10,4 @@
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe package mhchem is useful to typeset chemical formulae, like ^235_92U.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QWith propd it is possible to typeset differential equations and operators: \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsiunitx is very useful.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qacousto-optic modulator Bundesamt für Kartographie und Geodäsie, engl.\\E$"}
