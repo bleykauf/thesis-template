@@ -19,7 +19,7 @@ Uses XeLaTeX, TeX Live and `xelatexmk`. Made for use in VS Code with the LaTeX W
 ### Bibliography
 I recommend Zotero for organizing the bibliography as it works much better with biblatex than other solutions I tried. Make sure to install the extension Better BibTeX and use "Better BibLaTeX" when exporting the library (not "Better BibTeX"). Tick the "Keep updated" box to automatically sync the library.
 
-## Other
+## Notes
 ### Color map
 The standard color map of Matplotlib for usage in Inkscape can be found in the graphics subfolder.
 
@@ -31,3 +31,6 @@ To make glossaries work, a `latexmkrc` configuration file is used. See also http
 
 ### `cleverref`
 Note that when using `\Cref` the prefix will not be abbreviated. This is expected behavior since in English the first word of a sentence should not be abbreviated according to the documentation.
+
+### `pst-optexp`
+This package might be useful for drawing optical setups: https://ctan.org/pkg/pst-optexp?lang=en
